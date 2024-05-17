@@ -118,8 +118,9 @@
 /(vendor|system/vendor)/bin/hw/vendor\.oplus\.hardware\.cameraMDM@1\.0-service                                                       u:object_r:vendor_hal_cameraMDM_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oplus\.hardware\.cameraMDM@2\.0-service                                                       u:object_r:vendor_hal_cameraMDM_default_exec:s0
 
-# Charging
-/sys/devices/virtual/oplus_chg/battery/voocchg_ing     u:object_r:vendor_sysfs_battery_supply:s0
+# Battery
+/sys/devices/virtual/oplus_chg/battery/mmi_charging_enable            u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/virtual/oplus_chg/battery/voocchg_ing                    u:object_r:vendor_sysfs_battery_supply:s0
 
 # Display
 /dev/oplus_display                                                                 u:object_r:graphics_device:s0
@@ -153,6 +154,7 @@
 /(odm|vendor/odm)/bin/sensor_recover\.sh       u:object_r:vendor_qti_init_shell_exec:s0
 /(odm|vendor/odm)/bin/init\.network\.minidump\.sh    u:object_r:vendor_qti_init_shell_exec:s0
 /(odm|vendor/odm)/bin/init\.network\.removedump\.sh    u:object_r:vendor_qti_init_shell_exec:s0
+
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.oplus                                                 u:object_r:hal_light_default_exec:s0
 
